@@ -1,0 +1,510 @@
+*{/*esto le quita el margin y padding a todo el html*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Prueba contenedor*/
+
+.contenedor{
+    
+display: flex;
+justify-content: space-between;
+flex-wrap: nowrap;
+
+}
+
+
+/*--------------------*/
+header{
+    background-color: #EAC926;
+}
+
+.logo{
+    width: 50%;
+    padding: 25px 10px 10px 10px;
+}
+
+.barraBusqueda{
+    background-color: #FFF;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    color: #666;
+    margin: 25px 0px 25px 15px;
+    text-align:start;
+        width: 50%;
+
+}
+.lupa{
+    background-color: #FFF;
+    
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    color: #666;
+    width: 5%;
+    margin: 25px 15px 25px 0px;
+}
+
+
+/*Articulos----------------------------*/
+
+.articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+}
+
+
+.miniFooter{
+    background-color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+
+.camioncito {
+    display: block ;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precioDesc{
+    display:flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.desc{ /* descuentos y descripciones*/
+    font-size: 16px;
+    color: #39b54a;
+    padding-left: 10px;
+}
+
+.colorLetra{
+    color:darkgrey;
+    font-size: 14px;
+    display: none;
+    margin-top: 20px;
+    
+}
+
+
+
+/*-------------------------------------*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main{
+    width: 90%; /* diseño adaptativo*/
+   }
+
+.articulos{
+    background-color: #fff;
+}
+
+
+
+
+header nav { /*para ocultar el site y el login navbar*/
+    display: none;
+}
+
+
+.compraCuota{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cuerpoTexto{
+    font-size:12px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+
+
+div.burger-menu{
+    text-align: center;
+    
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 30px; /*esta es la dimensión del icono*/
+    margin: 20px 0px 20px 0px;
+    padding: 10px 15px 10px 15px;
+    
+}
+
+footer{
+text-align: center;
+}
+
+.footer-menu i{
+    text-align: center;
+    font-size: 2em; /*esta es la dimensión del icono*/
+    margin: 30px 0px 5px 0px;
+    height: 30px;
+    /*padding: 10px;*/
+    width: 40px;
+  
+}
+
+.footerCopy{
+
+    text-align:left;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+
+header ul li a{
+    text-decoration:none;
+    color: #000;
+    font-size: 10px;
+}
+
+header ul li{ /*con esto sacamos los iconos del header*/
+    list-style-type:none;
+}
+
+
+.articulo {
+    margin: 15px 15px 15px 15px;
+}
+
+
+
+
+
+/*------------------------------------MEDIA QUERIES*-----------------------------------------/
+
+
+/* --------------------------------------TABLET--------------------------------------------------*/
+@media (min-width:361px){
+ 
+
+
+.articulo{
+    max-width: 40vw;
+}
+
+ .contenedorNav{/*contenedor de site y loginNav */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    }
+
+.site{
+    
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:nowrap;
+        flex-grow: 0.5;
+        
+        }
+
+.loginNav{
+    
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: nowrap;
+            flex-grow: 0.8;
+            margin-right: 30px;
+            
+            }
+    .separador{
+        width: 20%;
+       
+    }
+
+  /*--------------------------------------------------------------*/          
+ .contenedorTablet{/*contenedor de logo buscar y compra cuotas */
+    
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+              
+                }
+
+.contenedor{
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.logo{
+width: 50%;
+padding: 25px 10px 10px 10px;
+
+
+}
+                
+.barraBusqueda{
+background-color: #FFF;
+border-top-left-radius: 5%;
+border-bottom-left-radius: 5%;
+color: #666;
+margin: 25px 0px 25px 15px;
+text-align:initial;
+width: 10%;
+height: 20%;
+flex-grow: 1;
+font-size: 70%;
+}
+
+.lupa{
+    background-color: #FFF;
+    
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    color: #666;
+    width: 5%;
+    height: 20%;
+    margin: 25px 15px 25px 0px;
+    
+}
+
+
+  .compraCuota{
+    width: 50%;
+    font-size: 80%;
+    padding: 25px 10px 50px 10px;
+    
+  }
+
+/*------------------------------------------------------------------*/
+
+
+
+header nav { /*para mostrar el site y el login navbar*/
+display: inline;    
+}
+
+.burger-menu{
+display: none;
+}
+
+/*----------------transicion y transfor TABLET------------------*/
+
+.colorLetra{
+    display: none;
+
+}
+
+.articulo:hover .colorLetra{
+
+    display: inline;
+}
+
+.articulo:hover .camioncito{
+    transform: rotate(-90deg);
+}
+
+}
+
+.articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/*----------------------------ACA TERMINA TRASICION Y TRANSFOR TABLET--------------------------*/
+
+/*----------------------------ACA TERMINA MEDIA TABLET--------------------------------------*/
+
+
+
+
+/* ----------------------------------------------DESKTOP-------------------------------------*/
+ @media (min-width: 769px){
+
+
+ .articulo{
+     max-width: 15vw;
+ }               
+
+/*----------------transicion y transfor------------------*/
+ .colorLetra{
+    display: none;
+
+}
+
+.articulo:hover .colorLetra{
+
+    display: inline;
+}
+
+.articulo:hover .camioncito{
+    transform: rotate(-90deg);
+}
+
+.articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+
+
+/*----------------TERMINA TRANSICION Y TRANSFOR---------------*/
+
+
+
+
+
+ header nav { /*para mostrar el site y el login navbar*/
+            display: inline;    
+        }
+.burger-menu{
+            display: none;
+            }
+
+ 
+ }
+
+
+ /*-------------------------------aca comienza el REGISTER------------------------------------------ */
+
+ .usuario{
+     width: 100%;
+ }
+
+ .registro{
+     padding: 30px;
+     margin:auto;
+     margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+ }
+
+ .controles {
+    width: 100%; 
+    padding: 10px;
+     border-radius: 4px;
+     margin-bottom: 20px;
+     border:none;
+ }
+
+ .controlArchivo{
+    color:white;
+    background-color: #0044AA;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+ }
+
+ .subtitulos{
+     margin-bottom: 10px;
+     padding: 5px;
+    font-weight: bold;
+
+ }
+
+ .rb{
+     margin-bottom: 20px;
+ }
+
+ .chk{
+     margin-bottom: 20px;
+ }
+
+ .imagenPerfil{
+     width: 200px;
+     height: 200px;
+ }
+
+ .btnCancelar {
+     color:white;
+     background-color: #0044AA;
+     padding: 10px;
+     width: 30%;
+
+ }
+
+ .btnEnviar{
+    color:white;
+    background-color: #0044AA;
+    padding: 10px;
+    width: 30%;
+
+ }
+
+
+/*-------------------------------aca termina el REGISTER------------------------------------------ */
+
+
+ 
+
+
+/*-------------------------------aca comienza el  LOGIN------------------------------------------*/
+.botonEnviar{
+    padding: 10px;
+    width: 80%;
+    background-color:  #0044AA;
+    color: white;
+    transition: background-color 450ms;
+
+    }
+
+    .botonEnviar:hover{
+        background-color:#0022AA;        
+
+
+    }
+
+  .controles{
+      width: 80%;
+  }
+
+    .sectionLogin{
+        text-align: center;
+    }
+
+
+  /*-------------------------------aca termina el  LOGIN------------------------------------------*/   
+
+ 
+ 
+  /*--------------------------TRANSICIONES FOOTER----------------------------------------*/
+
+ .footerDesktop{
+
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+
+}
+
+.footer-menu i:hover{
+   
+    background-color: yellow;
+}

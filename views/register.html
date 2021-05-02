@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Aca esta el VIEWPORT -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>    
+        <header>
+            <div class="contenedorTablet">   <!-- contenedor a partir de tablet --> 
+                <div class="contenedor">
+                    <div class="logo"><img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre"></div>
+                    <div class="barraBusqueda">Buscar productos, marcas</div>
+                    <div class="lupa"><i class="fa fa-search"></i></div>
+                </div> 
+                    <div class="compraCuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div>
+            </div>
+                    <!-- aca cierra el contenedor tablet -->
+                    
+                    <nav class="contenedorNav"> <!-- para listados se arma con NAV + UL + LI -->
+                        <ul class="site">
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Tiendas Oficiales</a></li>
+                            <li><a href="#">Vender</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                        </ul>
+                        <div class="separador"></div>
+                        <ul class="loginNav">
+                            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                        </ul>
+                    </nav>
+                
+                    <div class="burger-menu">
+                        <i class="fa fa-bars burger"></i>
+                    </div>
+</header>
+    <section>
+        <img src="/images/img-home-banner.jpg" width="100%" alt="Banner de ofertas">
+    </section>
+    
+    <section class="registro"> <!--Aca comienza el registro de datos personales--> 
+        
+    <div class="subtitulos"><label >Introduzca Datos Personales</label></div>
+    <div><input class="controles" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" /></div>
+    <div><input class="controles" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario" /></div>
+    <div><input class="controles" type="email" name="email" id="email" placeholder="E-mail" /></div>
+    <div class="subtitulos"><label >Fecha de Nacimiento</label></div>   
+    <div><input class="controles" type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" /></div>
+    <div><input class="controles" type="text" name="domicilio" id="domicilio" placeholder="Domicilio" /></div>
+    <!--RadioButton--> 
+    <div class="subtitulos"><label >Perfil del usuario</label></div>
+    <div><input class="rb" type="radio" name="Comprador" value="Comprador">Comprador</div>
+    <div><input class="rb"type="radio" name="Vendedor" value="Vendedor">Vendedor</div>
+    <!--Checkboxs--> 
+    <div class="subtitulos"><label >Intereses</label></div>
+    <div><input class="chk" type="checkbox" name="intereses" value="Electro">Electro</div>
+    <div><input class="chk" type="checkbox" name="intereses" value="Moda">Moda</div>
+    <div><input class="chk" type="checkbox" name="intereses" value="Hogar">Hogar</div>
+    <div><input class="chk" type="checkbox" name="intereses" value="Jugueteria">Jugueteria</div>
+    <div><input class="chk" type="checkbox" name="intereses" value="Vida sana">Vida sana</div>
+    <div class="subtitulos"><label >Ingrese una imagen de perfil</label></div>
+    <div><input class="controlArchivo" type="file" name="avatar" accept=".jpg" multiple></div>
+    <div><input class="controles" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" /></div>
+    <div><input class="controles" type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmar Contraseña" /></div>
+    <button class="btnCancelar" type="reset">Cancelar</button>
+    <button class="btnEnviar"type="submit">Enviar</button>   
+</section>
+
+</body>
+</html>
